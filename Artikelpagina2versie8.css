@@ -1,0 +1,90 @@
+/* Artikel opgemaakt met Media Queries */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: verdana, calibri, sans-serif;
+    line-height: 1.5em;
+}
+
+/* Header */
+body > header {
+    background-color: #fecb2f;
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+img[src="cmd_logo.png"] {
+    width: 40%;
+    height: 40%;
+}
+
+/* Main */
+main {
+    background-color: aliceblue;
+    font-size: 1em;
+    padding: 2.5em;
+    width: 50%;
+    float: left;
+}
+
+/* Gerelateerde artikelen */
+.related {
+    background-color: #dde7ef;
+    font-size: 1em;
+    padding: 2em;
+    width: 25%;
+    float: left;
+    vertical-align: top;
+}
+
+img {
+    width: 100%;
+}
+
+aside {
+    background-color: lightgray;
+    font-size: .9em;
+    padding: 2em;
+    float: left;
+    width: 25%;
+}
+
+/* Footer */
+aside + footer {
+    background-color: #fecb2f;
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    clear: left;
+}
+
+/* Media Queries */
+@media screen and (max-width: 70em) {
+    main {
+        width: 50%;
+    }
+    .related {
+        width: 50%;
+    }
+    aside {
+        width: 100%;
+}
+
+@media screen and (max-width: 40em) {
+    main {
+        width: 100%;
+    }
+    .related {
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+    }
+}
